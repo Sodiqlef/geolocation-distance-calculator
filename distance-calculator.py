@@ -13,8 +13,8 @@ data = response.json()
 device_latitude, device_longitude = data.get("loc", "").split(",")
 
 # Define the coordinates of the other point
-other_latitude = 40.712776
-other_longitude = -74.005974
+other_latitude = float(input("input the latitude: " ))
+other_longitude = float(input("input the longtitude: "))
 
 # Calculate the distance between device and other point
 device_location = (float(device_latitude), float(device_longitude))
